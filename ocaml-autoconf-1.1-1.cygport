@@ -1,0 +1,15 @@
+DESCRIPTION="Autoconf macro for detecting OCaml installation"
+HOMEPAGE="http://ocaml-autoconf.forge.ocamlcore.org/"
+SRC_URI="https://forge.ocamlcore.org/frs/download.php/282/ocaml-autoconf-1.1.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake all doc
+}
+
+src_install() {
+	cd ${B}
+	cyginstall prefix=/usr
+	dodoc *.txt *.html
+}

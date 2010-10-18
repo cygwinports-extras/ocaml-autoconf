@@ -1,0 +1,5 @@
+category: Devel OCaml
+requires: 
+sdesc: "OCaml autoconf macro"
+ldesc: "Autoconf macro to support configuration of OCaml programs and 
+libraries."
